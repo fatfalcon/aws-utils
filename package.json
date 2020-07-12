@@ -1,6 +1,6 @@
 {
   "name": "@fatfalcon-public/aws-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple utils that make it easier to integrate with AWS",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

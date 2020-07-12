@@ -1,8 +1,8 @@
-import {getParameters, getParametersByPathRecursively} from './ssm'
+import { getParameters, getParametersByPathRecursively } from './ssm'
 
 export default {
-    ssm: {
-        getParameters,
-        getParametersByPathRecursively
-    }
+  ssm: {
+    getParameters,
+    getParametersByPathRecursively
+  }
 }
