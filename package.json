@@ -19,7 +19,7 @@
     "registry": "https://registry.npmjs.com/"
   },
   "keywords": [],
-  "author": "",
+  "author": "fatfalcon",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^14.0.14",
@@ -35,5 +35,13 @@
   "dependencies": {
     "aws-sdk": "^2.706.0",
     "source-map-support": "^0.5.19"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatfalcon/aws-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fatfalcon/aws-utils/issues"
+  },
+  "homepage": "https://github.com/fatfalcon/aws-utils#readme"
 }
