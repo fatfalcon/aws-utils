@@ -1,5 +1,5 @@
 {
-  "name": "@thinklt/aws-utils",
+  "name": "@fatfalcon-public/aws-utils",
   "version": "1.0.0",
   "description": "Simple utils that make it easier to integrate with AWS",
   "main": "dist/index.js",
