@@ -1,6 +1,6 @@
 import AWS from 'aws-sdk'
 
-const getParameters = async (ssm: AWS.SSM, params: string[]) : Promise<{ [key: string]: string }> => {
+export const getParameters = async (ssm: AWS.SSM, params: string[]) : Promise<{ [key: string]: string }> => {
     const data = await ssm.getParameters({
         Names: params,
         WithDecryption: true
@@ -12,14 +12,6 @@ const getParameters = async (ssm: AWS.SSM, params: string[]) : Promise<{ [key: s
         acc[name] = value
         return acc
     }, result)
-}
-
-const getParametersByPath = (ssm: AWS.SSM, path: string) => {
-    ssm.getParametersByPath({
-        Path: path,
-        Recursive: true,
-        WithDecryption: true
-    })
 }
 
 /**
@@ -35,7 +27,7 @@ const getParametersByPath = (ssm: AWS.SSM, path: string) => {
  * @param ssm 
  * @param params 
  */
-const getParametersByPathRecursively = async (ssm: AWS.SSM, params) => {
+export const getParametersByPathRecursively = async (ssm: AWS.SSM, params) => {
     const data = await ssm.getParametersByPath(params).promise();
     let parameters = data.Parameters;
   
@@ -46,10 +38,4 @@ const getParametersByPathRecursively = async (ssm: AWS.SSM, params) => {
       ];
     }
     return parameters;
-}
-
-export default {
-    getParameters,
-    getParametersByPath,
-    getParametersByPathRecursively
 }
