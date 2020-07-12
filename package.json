@@ -1,5 +1,5 @@
 {
-  "name": "@fatfalcon-public/aws-utils",
+  "name": "@thinklt/aws-utils",
   "version": "1.0.0",
   "description": "Simple utils that make it easier to integrate with AWS",
   "main": "dist/index.js",
@@ -16,7 +16,8 @@
     "postversion": "git push && git push --tags"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.com/"
+    "registry": "https://registry.npmjs.com/",
+    "access": "public"
   },
   "keywords": [],
   "author": "fatfalcon",
