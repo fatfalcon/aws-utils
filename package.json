@@ -16,7 +16,6 @@
     "postversion": "git push && git push --tags"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.com/",
     "access": "public"
   },
   "keywords": [],
